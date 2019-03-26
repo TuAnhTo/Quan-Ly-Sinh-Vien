@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class sinhVien {
     private int ID;
     private String name;
@@ -79,6 +81,15 @@ public class sinhVien {
         System.out.println(" Ly: " +this.ly);
         System.out.println("Hoa: " +this.hoa);
     }
-
+public void input(){
+    Scanner input = new Scanner(System.in);
+    int ID;String name;String sex;int toan;int ly;int hoa;
+    System.out.println(" nhap vao id: ");ID = input.nextInt();input.nextLine();
+    System.out.println(" nhap vao ten: ");name = input.nextLine();
+    System.out.println("nhap vao gioi tinh:");sex = input.nextLine();
+    System.out.println("toan");toan = input.nextInt();
+    System.out.println("Ly");ly = input.nextInt();
+    System.out.println("hoa");hoa = input.nextInt();
+}
 
 }
